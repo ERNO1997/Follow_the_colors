@@ -1,0 +1,6 @@
+<resources>
+    <style name="Widget.Theme.FollowTheColors.NoActionBar.MyView" parent="">
+        <item name="srcON">@drawable/background_red_on</item>
+        <item name="srcOFF">@drawable/background_red_off</item>
+    </style>
+</resources>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.GameFragment">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold"
+        android:textColor="?attr/dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/txt_record"/>
+
+
+    <TextView
+        android:id="@+id/txt_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/record"
+        android:textSize="@dimen/regular_text_size"
+        android:textStyle="bold"
+        android:textColor="?attr/dark"
+        app:layout_constraintEnd_toStartOf="@+id/txt_score"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title"
+        app:layout_constraintBottom_toTopOf="@id/square_background"/>
+
+    <TextView
+        android:id="@+id/txt_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score"
+        android:textSize="@dimen/regular_text_size"
+        android:textStyle="bold"
+        android:textColor="?attr/dark"
+        app:layout_constraintEnd_toStartOf="@id/img_settings"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txt_record"
+        app:layout_constraintTop_toTopOf="@+id/txt_record" />
+
+    <ImageView
+        android:id="@+id/img_settings"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:srcCompat="@drawable/ic_settings_selector"
+        app:layout_constraintStart_toEndOf="@id/txt_score"
+        app:layout_constraintTop_toTopOf="@id/txt_record"
+        app:layout_constraintBottom_toBottomOf="@id/txt_record"
+        app:layout_constraintEnd_toStartOf="@id/img_help"
+        android:contentDescription="@string/settings"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/img_help"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:srcCompat="@drawable/ic_help"
+        app:layout_constraintStart_toEndOf="@id/img_settings"
+        app:layout_constraintTop_toTopOf="@id/txt_record"
+        app:layout_constraintBottom_toBottomOf="@id/txt_record"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/help"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/square_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/background_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <cu.erno.followthecolors.ui.customview.TileView
+        android:id="@+id/img_red"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:srcON="@drawable/background_red_on"
+        app:srcOFF="@drawable/background_red_off"
+        app:layout_constraintBottom_toTopOf="@+id/img_orange"
+        app:layout_constraintEnd_toStartOf="@id/img_pink"
+        app:layout_constraintStart_toStartOf="@id/square_background"
+        app:layout_constraintTop_toTopOf="@id/square_background"
+        tools:ignore="ContentDescription" />
+
+    <cu.erno.followthecolors.ui.customview.TileView
+        android:id="@+id/img_pink"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:srcON="@drawable/background_pink_on"
+        app:srcOFF="@drawable/background_pink_off"
+        app:layout_constraintBottom_toTopOf="@id/img_white"
+        app:layout_constraintEnd_toStartOf="@id/img_blue"
+        app:layout_constraintStart_toEndOf="@id/img_red"
+        app:layout_constraintTop_toTopOf="@id/square_background"
+        tools:ignore="ContentDescription" />
+
+    <cu.erno.followthecolors.ui.customview.TileView
+        android:id="@+id/img_blue"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:srcON="@drawable/background_blue_on"
+        app:srcOFF="@drawable/background_blue_off"
+        app:layout_constraintBottom_toTopOf="@id/img_purple"
+        app:layout_constraintEnd_toEndOf="@id/square_background"
+        app:layout_constraintStart_toEndOf="@id/img_pink"
+        app:layout_constraintTop_toTopOf="@id/square_background"
+        tools:ignore="ContentDescription" />
+
+    <cu.erno.followthecolors.ui.customview.TileView
+        android:id="@+id/img_orange"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:srcON="@drawable/background_orange_on"
+        app:srcOFF="@drawable/background_orange_off"
+        app:layout_constraintBottom_toTopOf="@+id/img_yellow"
+        app:layout_constraintEnd_toStartOf="@id/img_white"
+        app:layout_constraintStart_toStartOf="@id/square_background"
+        app:layout_constraintTop_toBottomOf="@id/img_red"
+        tools:ignore="ContentDescription" />
+
+    <cu.erno.followthecolors.ui.customview.TileView
+        android:id="@+id/img_white"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:srcON="@drawable/background_white_on"
+        app:srcOFF="@drawable/background_white_off"
+        app:layout_constraintBottom_toTopOf="@id/img_brown"
+        app:layout_constraintEnd_toStartOf="@id/img_purple"
+        app:layout_constraintStart_toEndOf="@id/img_orange"
+        app:layout_constraintTop_toBottomOf="@id/img_pink"
+        tools:ignore="ContentDescription" />
+
+    <cu.erno.followthecolors.ui.customview.TileView
+        android:id="@+id/img_purple"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:srcON="@drawable/background_purple_on"
+        app:srcOFF="@drawable/background_purple_off"
+        app:layout_constraintBottom_toTopOf="@id/img_green"
+        app:layout_constraintEnd_toEndOf="@id/square_background"
+        app:layout_constraintStart_toEndOf="@id/img_white"
+        app:layout_constraintTop_toBottomOf="@id/img_blue"
+        tools:ignore="ContentDescription" />
+
+    <cu.erno.followthecolors.ui.customview.TileView
+        android:id="@+id/img_yellow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:srcON="@drawable/background_yellow_on"
+        app:srcOFF="@drawable/background_yellow_off"
+        app:layout_constraintBottom_toBottomOf="@+id/square_background"
+        app:layout_constraintEnd_toStartOf="@id/img_brown"
+        app:layout_constraintStart_toStartOf="@id/square_background"
+        app:layout_constraintTop_toBottomOf="@id/img_orange"
+        tools:ignore="ContentDescription" />
+
+    <cu.erno.followthecolors.ui.customview.TileView
+        android:id="@+id/img_brown"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:srcON="@drawable/background_brown_on"
+        app:srcOFF="@drawable/background_brown_off"
+        app:layout_constraintBottom_toBottomOf="@id/square_background"
+        app:layout_constraintEnd_toStartOf="@id/img_green"
+        app:layout_constraintStart_toEndOf="@id/img_yellow"
+        app:layout_constraintTop_toBottomOf="@id/img_white"
+        tools:ignore="ContentDescription" />
+
+    <cu.erno.followthecolors.ui.customview.TileView
+        android:id="@+id/img_green"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:srcON="@drawable/background_green_on"
+        app:srcOFF="@drawable/background_green_off"
+        app:layout_constraintBottom_toBottomOf="@id/square_background"
+        app:layout_constraintEnd_toEndOf="@id/square_background"
+        app:layout_constraintStart_toEndOf="@id/img_brown"
+        app:layout_constraintTop_toBottomOf="@id/img_purple"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:paddingVertical="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/square_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/square_background"
+        app:layout_constraintEnd_toEndOf="@id/square_background"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

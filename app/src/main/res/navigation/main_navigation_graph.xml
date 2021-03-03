@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="cu.erno.followthecolors.ui.GameFragment"
+        android:label="game_fragment"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFragment_to_newRecordDialog"
+            app:destination="@id/newRecordDialog" />
+        <action
+            android:id="@+id/action_gameFragment_to_gameOverDialog"
+            app:destination="@id/gameOverDialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="cu.erno.followthecolors.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_gameFragment"
+            app:destination="@id/gameFragment"
+            app:enterAnim="@anim/slide_in_rigth"
+            app:exitAnim="@anim/slide_out_rigth"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_aboutDialog"
+            app:destination="@id/aboutDialog" />
+    </fragment>
+    <dialog
+        android:id="@+id/newRecordDialog"
+        android:name="cu.erno.followthecolors.ui.dialog.NewRecordDialog"
+        android:label="dialog_new_record"
+        tools:layout="@layout/dialog_game_over" />
+    <dialog
+        android:id="@+id/gameOverDialog"
+        android:name="cu.erno.followthecolors.ui.dialog.GameOverDialog"
+        android:label="GameOverDialog"
+        tools:layout="@layout/dialog_game_over"/>
+    <dialog
+        android:id="@+id/aboutDialog"
+        android:name="cu.erno.followthecolors.ui.dialog.AboutDialog"
+        android:label="AboutDialog"
+        tools:layout="@layout/dialog_about"/>
+</navigation>

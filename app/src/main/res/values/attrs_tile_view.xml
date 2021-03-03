@@ -1,0 +1,33 @@
+<resources>
+    <declare-styleable name="TileView">
+        <attr name="srcON" format="reference" />
+        <attr name="srcOFF" format="reference" />
+        <attr name="isON" format="boolean"/>
+    </declare-styleable>
+
+    <!-- Color attrs -->
+    <attr name="redON" format="color|reference"/>
+    <attr name="redOFF" format="color|reference"/>
+    <attr name="pinkON" format="color|reference"/>
+    <attr name="pinkOFF" format="color|reference"/>
+    <attr name="purpleON" format="color|reference"/>
+    <attr name="purpleOFF" format="color|reference"/>
+    <attr name="blueON" format="color|reference"/>
+    <attr name="blueOFF" format="color|reference"/>
+    <attr name="orangeON" format="color|reference"/>
+    <attr name="orangeOFF" format="color|reference"/>
+    <attr name="whiteON" format="color|reference"/>
+    <attr name="whiteOFF" format="color|reference"/>
+    <attr name="yellowON" format="color|reference"/>
+    <attr name="yellowOFF" format="color|reference"/>
+    <attr name="brownON" format="color|reference"/>
+    <attr name="brownOFF" format="color|reference"/>
+    <attr name="greenON" format="color|reference"/>
+    <attr name="greenOFF" format="color|reference"/>
+
+    <attr name="dark" format="color|reference"/>
+    <attr name="background_dark" format="color|reference"/>
+    <attr name="background_error" format="color|reference"/>
+
+    <attr name="record" format="color|reference"/>
+</resources>

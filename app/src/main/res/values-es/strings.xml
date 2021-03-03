@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sigue los colores</string>
+    <string name="record">Récord: %d</string>
+    <string name="score">Puntos: %d</string>
+    <string name="start">Comenzar</string>
+    <string name="settings">Ajustes</string>
+    <string name="help">Ayuda</string>
+    <string name="how_to_play">¿Cómo jugar?</string>
+    <string name="statistics">Estadísticas</string>
+    <string name="share_with_friends">Compartir con amigos</string>
+    <string name="rate_and_comment">Valora y comenta</string>
+    <string name="play">Jugar</string>
+    <string name="generating">Generando...</string>
+    <string name="go_ahead">Adelante</string>
+    <string name="next">Siguiente</string>
+    <string name="changing">Cambiando</string>
+    <string name="lose">Has perdido</string>
+    <string name="new_record">Nuevo récord</string>
+    <string name="play_again">Jugar de nuevo</string>
+    <string name="return_to_title">Volver al inicio</string>
+    <string name="game_over">Has perdido</string>
+    <string name="about">Acerca de...</string>
+    <string name="developer">Programación</string>
+    <string name="designer">Diseño</string>
+    <string name="sound">Sonido</string>
+    <string name="version">versión %s</string>
+</resources>

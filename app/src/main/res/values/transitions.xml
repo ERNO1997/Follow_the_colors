@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+    <string name="transition_txt_title" translatable="false">txtTitle</string>
+    <string name="transition_txt_record" translatable="false">txtRecord</string>
+    <string name="transition_btn_play" translatable="false">btnPlay</string>
+</resources>
