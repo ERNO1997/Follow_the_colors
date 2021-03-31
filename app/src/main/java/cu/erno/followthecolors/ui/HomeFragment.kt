@@ -12,9 +12,9 @@ import androidx.navigation.fragment.FragmentNavigator
 import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
-import cu.erno.followthecolors.ui.viewmodel.GameViewModel
 import cu.erno.followthecolors.R
 import cu.erno.followthecolors.databinding.FragmentHomeBinding
+import cu.erno.followthecolors.ui.viewmodel.GameViewModel
 
 class HomeFragment : Fragment() {
 
@@ -31,7 +31,7 @@ class HomeFragment : Fragment() {
         })
 
         binding.layoutHowToPlay.setOnClickListener {
-            Snackbar.make(binding.layoutHowToPlay, "How to play", Snackbar.LENGTH_SHORT).show()
+            findNavController().navigate(R.id.action_homeFragment_to_tutorialDialog)
         }
 
         binding.layoutStatistics.setOnClickListener {

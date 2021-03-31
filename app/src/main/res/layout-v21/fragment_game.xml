@@ -72,8 +72,7 @@
         app:layout_constraintTop_toTopOf="@id/txt_record"
         app:layout_constraintBottom_toBottomOf="@id/txt_record"
         app:layout_constraintEnd_toEndOf="parent"
-        android:contentDescription="@string/help"
-        android:visibility="gone"/>
+        android:contentDescription="@string/help"/>
 
     <ImageView
         android:id="@+id/square_background"

@@ -25,7 +25,9 @@
     <attr name="greenON" format="color|reference"/>
     <attr name="greenOFF" format="color|reference"/>
 
+    <attr name="light" format="color|reference"/>
     <attr name="dark" format="color|reference"/>
+    <attr name="mediumDark" format="color|reference"/>
     <attr name="background_dark" format="color|reference"/>
     <attr name="background_error" format="color|reference"/>
 

@@ -77,6 +77,10 @@ class GameFragment : Fragment() {
                 viewModel.notifyGenerationEnd()
             }
         }
+        // Set the onClick to the help button
+        binding.imgHelp.setOnClickListener {
+            findNavController().navigate(R.id.action_gameFragment_to_tutorialDialog)
+        }
 
         viewModel.gameState.observe(viewLifecycleOwner, Observer { gameState ->
             when (gameState) {

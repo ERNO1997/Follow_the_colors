@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_gameFragment_to_gameOverDialog"
             app:destination="@id/gameOverDialog" />
+        <action
+            android:id="@+id/action_gameFragment_to_tutorialDialog"
+            app:destination="@id/tutorialDialog" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
@@ -32,6 +35,9 @@
         <action
             android:id="@+id/action_homeFragment_to_aboutDialog"
             app:destination="@id/aboutDialog" />
+        <action
+            android:id="@+id/action_homeFragment_to_tutorialDialog"
+            app:destination="@id/tutorialDialog" />
     </fragment>
     <dialog
         android:id="@+id/newRecordDialog"
@@ -48,4 +54,9 @@
         android:name="cu.erno.followthecolors.ui.dialog.AboutDialog"
         android:label="AboutDialog"
         tools:layout="@layout/dialog_about"/>
+    <dialog
+        android:id="@+id/tutorialDialog"
+        android:name="cu.erno.followthecolors.ui.dialog.TutorialDialog"
+        android:label="@string/how_to_play"
+        tools:layout="@layout/dialog_tutorial"/>
 </navigation>

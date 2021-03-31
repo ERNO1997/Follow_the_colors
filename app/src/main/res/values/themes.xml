@@ -31,7 +31,9 @@
         <item name="greenON">@color/green_on</item>
         <item name="greenOFF">@color/green_off</item>
 
+        <item name="light">@color/light</item>
         <item name="dark">@color/dark</item>
+        <item name="mediumDark">@color/mediumDark</item>
         <item name="background_dark">@color/dark</item>
         <item name="background_error">@color/error</item>
 

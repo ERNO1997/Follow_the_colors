@@ -25,4 +25,17 @@
     <string name="sound">Sound</string>
     <string name="erno" translatable="false">Ernesto Julio Pérez Valdés</string>
     <string name="version">version %s</string>
+    <string name="one" translatable="false">1</string>
+    <string name="two" translatable="false">2</string>
+    <string name="three" translatable="false">3</string>
+    <string name="four" translatable="false">4</string>
+    <string name="five" translatable="false">5</string>
+    <string name="six" translatable="false">6</string>
+    <string name="tutorial_step_1">Press PLAY button to get into the game</string>
+    <string name="tutorial_step_2">Press START button to start the game</string>
+    <string name="tutorial_step_3">Memorize the generated colors pattern</string>
+    <string name="tutorial_step_4">Touch colors in order that they were shown</string>
+    <string name="tutorial_step_5">Keep playing, try to get high score and enjoy it</string>
+    <string name="tutorial_step_6">If you lose, don\'t give up, keep trying to beat your high score, good luck</string>
+    <string name="level_up">Level Up</string>
 </resources>

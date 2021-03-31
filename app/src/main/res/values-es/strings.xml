@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Sigue los colores</string>
     <string name="record">Récord: %d</string>
     <string name="score">Puntos: %d</string>
@@ -11,7 +11,7 @@
     <string name="share_with_friends">Compartir con amigos</string>
     <string name="rate_and_comment">Valora y comenta</string>
     <string name="play">Jugar</string>
-    <string name="generating">Generando...</string>
+    <string name="generating" tools:ignore="TypographyEllipsis">Generando...</string>
     <string name="go_ahead">Adelante</string>
     <string name="next">Siguiente</string>
     <string name="changing">Cambiando</string>
@@ -20,9 +20,16 @@
     <string name="play_again">Jugar de nuevo</string>
     <string name="return_to_title">Volver al inicio</string>
     <string name="game_over">Has perdido</string>
-    <string name="about">Acerca de...</string>
+    <string name="about" tools:ignore="TypographyEllipsis">Acerca de...</string>
     <string name="developer">Programación</string>
     <string name="designer">Diseño</string>
     <string name="sound">Sonido</string>
     <string name="version">versión %s</string>
+    <string name="tutorial_step_1">Presiona el botón JUGAR para entrar al juego</string>
+    <string name="tutorial_step_2">Presiona el botón COMENZAR para empezar el juego</string>
+    <string name="tutorial_step_3">Memoriza el patrón de colores generado</string>
+    <string name="tutorial_step_4">Toca los colores en el orden que fueron mostrados</string>
+    <string name="tutorial_step_5">Sigue jugando, trata de obtener la mayor puntuación y diviértete</string>
+    <string name="tutorial_step_6">Si pierdes, no te rindas, sigue intentando romper tu mayor puntuación, buena suerte</string>
+    <string name="level_up">Dificultad Aumentada</string>
 </resources>
