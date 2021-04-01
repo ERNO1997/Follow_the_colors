@@ -5,6 +5,7 @@ import android.content.Context
 import android.os.Build
 import android.os.Bundle
 import android.os.Vibrator
+import android.view.Gravity
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -20,6 +21,7 @@ import cu.erno.followthecolors.ui.viewmodel.GameViewModel
 import cu.erno.followthecolors.R
 import cu.erno.followthecolors.ui.customview.TileView
 import cu.erno.followthecolors.databinding.FragmentGameBinding
+import cu.erno.followthecolors.databinding.ToastLevelUpBinding
 import kotlinx.coroutines.*
 
 class GameFragment : Fragment() {
@@ -161,7 +163,7 @@ class GameFragment : Fragment() {
                     }
                 }
                 GameViewModel.Difficulty.MEDIUM -> {
-                    Toast.makeText(context, "Has llegado al nivel medio", Toast.LENGTH_SHORT).show()
+                    showToastLevelUp()
                     lifecycleScope.launch {
                         delay(100)
                         turnOffTiles()
@@ -178,8 +180,7 @@ class GameFragment : Fragment() {
                     }
                 }
                 GameViewModel.Difficulty.HARD -> {
-                    Toast.makeText(context, "Has llegado al nivel avanzado", Toast.LENGTH_SHORT)
-                        .show()
+                    showToastLevelUp()
                     lifecycleScope.launch {
                         delay(100)
                         turnOffTiles()
@@ -196,7 +197,8 @@ class GameFragment : Fragment() {
                     }
                 }
                 GameViewModel.Difficulty.NONE -> {
-                    val vibrator = requireActivity().getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+                    val vibrator =
+                        requireActivity().getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
                     val milliseconds = 500L
                     if (vibrator.hasVibrator()) vibrator.vibrate(milliseconds)
                     binding.squareBackground.setImageResource(R.drawable.background_error)
@@ -204,7 +206,7 @@ class GameFragment : Fragment() {
                         delay(500)
                         turnOffTiles()
                         binding.squareBackground.setImageResource(R.drawable.background_dark)
-                        if(viewModel.brokeRecord.value == true)
+                        if (viewModel.brokeRecord.value == true)
                             findNavController().navigate(R.id.action_gameFragment_to_newRecordDialog)
                         else
                             findNavController().navigate(R.id.action_gameFragment_to_gameOverDialog)
@@ -234,5 +236,13 @@ class GameFragment : Fragment() {
 
     private fun turnOffTiles() {
         tiles.forEach { it.turnOFF() }
+    }
+
+    private fun showToastLevelUp() {
+        val toast = Toast(context)
+        toast.duration = Toast.LENGTH_SHORT
+        toast.view = ToastLevelUpBinding.inflate(LayoutInflater.from(context)).root
+        toast.setGravity(Gravity.CENTER, 0, 0)
+        toast.show()
     }
 }

@@ -36,6 +36,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imgCrown"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@drawable/ic_win"
+        android:visibility="visible"
+        tools:ignore="ContentDescription" />
+
 
     <LinearLayout
         android:layout_width="wrap_content"

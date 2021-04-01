@@ -37,6 +37,8 @@ class NewRecordDialog : DialogFragment() {
             binding.txtScore.text = getString(R.string.record, record)
         })
 
+        binding.imgCrown.visibility = View.VISIBLE
+
         binding.layoutHome.setOnClickListener {
             viewModel.resetGame()
             findNavController().popBackStack(R.id.homeFragment, false)
