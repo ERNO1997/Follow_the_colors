@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:text="@string/score"
         android:textColor="?attr/dark"
-        android:textSize="28sp"
+        android:textSize="@dimen/_24sdp"
         android:layout_marginVertical="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,12 +38,12 @@
 
     <ImageView
         android:id="@+id/imgCrown"
-        android:layout_width="72dp"
-        android:layout_height="72dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="@dimen/_64sdp"
+        android:layout_height="@dimen/_64sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_13sdp"
         app:srcCompat="@drawable/ic_win"
-        android:visibility="visible"
+        android:visibility="gone"
         tools:ignore="ContentDescription" />
 
 
@@ -69,7 +69,7 @@
             <ImageView
                 android:layout_width="@dimen/home_icon_size"
                 android:layout_height="@dimen/home_icon_size"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="@dimen/_5sdp"
                 app:srcCompat="@drawable/ic_home"
                 tools:ignore="ContentDescription" />
 
@@ -86,10 +86,10 @@
             android:id="@+id/layout_reset"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="@dimen/_5sdp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:paddingVertical="8dp"
+            android:paddingVertical="@dimen/_5sdp"
             tools:ignore="UseCompoundDrawables">
 
             <ImageView

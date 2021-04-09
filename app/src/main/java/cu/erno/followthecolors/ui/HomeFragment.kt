@@ -1,5 +1,7 @@
 package cu.erno.followthecolors.ui
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -39,11 +41,16 @@ class HomeFragment : Fragment() {
         }
 
         binding.layoutShare.setOnClickListener {
-            Snackbar.make(binding.layoutShare, "Share", Snackbar.LENGTH_SHORT).show()
+            val shareIntent = Intent(Intent.ACTION_SEND)
+            shareIntent.type = "text/plain"
+            shareIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.share_text))
+            startActivity(Intent.createChooser(shareIntent, getString(R.string.share_with_friends)))
+
         }
 
         binding.layoutRate.setOnClickListener {
-            Snackbar.make(binding.layoutRate, "Rate and comment", Snackbar.LENGTH_SHORT).show()
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.apklis.cu/application/cu.erno.followthecolors"))
+            startActivity(intent)
         }
 
         binding.layoutAbout.setOnClickListener {
@@ -51,17 +58,18 @@ class HomeFragment : Fragment() {
         }
 
         binding.btnPlay.setOnClickListener {
-            var extras: FragmentNavigator.Extras? = null
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                extras = FragmentNavigatorExtras(
+                val extras = FragmentNavigatorExtras(
                     binding.txtTitle to binding.txtTitle.transitionName,
                     //binding.txtRecord to binding.txtRecord.transitionName,
                     binding.btnPlay to binding.btnPlay.transitionName
                 )
+                findNavController().navigate(
+                    R.id.action_homeFragment_to_gameFragment, null, null, extras
+                )
+            } else {
+                findNavController().navigate(R.id.action_homeFragment_to_gameFragment)
             }
-            findNavController().navigate(
-                R.id.action_homeFragment_to_gameFragment, null, null, extras
-            )
         }
 
         return binding.root

@@ -12,22 +12,22 @@
         android:background="@drawable/toast_bg"
         android:orientation="horizontal"
         android:gravity="center"
-        android:paddingVertical="10dp"
-        android:paddingHorizontal="20dp">
+        android:paddingVertical="@dimen/_8sdp"
+        android:paddingHorizontal="@dimen/_16sdp">
 
         <ImageView
-            android:layout_width="36dp"
-            android:layout_height="36dp"
+            android:layout_width="@dimen/tutorial_circular_image"
+            android:layout_height="@dimen/tutorial_circular_image"
             app:srcCompat="@drawable/ic_level_up"
             tools:ignore="ContentDescription"
-            android:layout_marginEnd="10dp"/>
+            android:layout_marginEnd="@dimen/_8sdp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/level_up"
             android:textStyle="bold"
-            android:textSize="18sp"
+            android:textSize="@dimen/_14sdp"
             android:textColor="?light" />
     </LinearLayout>
 

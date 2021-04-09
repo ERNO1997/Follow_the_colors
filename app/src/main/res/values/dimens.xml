@@ -2,9 +2,16 @@
 <resources>
     <dimen name="border_radius">10dp</dimen>
 
-    <dimen name="home_icon_size">24dp</dimen>
-    <dimen name="title_size">36sp</dimen>
-    <dimen name="regular_text_size">20sp</dimen>
+    <dimen name="home_icon_size">@dimen/_20sdp</dimen>
+    <dimen name="title_size">@dimen/_32sdp</dimen>
+    <dimen name="regular_text_size">@dimen/_16sdp</dimen>
     <dimen name="list_item_spacing">16dp</dimen>
     <dimen name="list_item_spacing_half">8dp</dimen>
+    <dimen name="tutorial_circular_image">@dimen/_30sdp</dimen>
+    <dimen name="tutorial_circular_image_text">@dimen/_14sdp</dimen>
+    <dimen name="tutorial_circular_text">@dimen/_13sdp</dimen>
+    <dimen name="regular_margin">@dimen/_16sdp</dimen>
+
+    <dimen name="button_text">@dimen/_17sdp</dimen>
+    <dimen name="button_padding">@dimen/_14sdp</dimen>
 </resources>

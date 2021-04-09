@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:text="@string/record"
         android:textColor="?attr/dark"
-        android:textSize="28sp"
+        android:textSize="@dimen/_22sdp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/layoutButtons"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,16 +47,16 @@
             android:id="@+id/layoutHowToPlay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="@dimen/_5sdp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:paddingVertical="8dp"
+            android:paddingVertical="@dimen/_5sdp"
             tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:layout_width="@dimen/home_icon_size"
                 android:layout_height="@dimen/home_icon_size"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="@dimen/_5sdp"
                 app:srcCompat="@drawable/ic_help"
                 tools:ignore="ContentDescription" />
 
@@ -73,17 +73,17 @@
             android:id="@+id/layoutStatistics"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="@dimen/_5sdp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:paddingVertical="8dp"
+            android:paddingVertical="@dimen/_5sdp"
             tools:ignore="UseCompoundDrawables"
             android:visibility="gone">
 
             <ImageView
                 android:layout_width="@dimen/home_icon_size"
                 android:layout_height="@dimen/home_icon_size"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="@dimen/_5sdp"
                 app:srcCompat="@drawable/ic_statistic"
                 tools:ignore="ContentDescription" />
 
@@ -100,17 +100,16 @@
             android:id="@+id/layoutShare"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="@dimen/_5sdp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:paddingVertical="8dp"
-            tools:ignore="UseCompoundDrawables"
-            android:visibility="gone">
+            android:paddingVertical="@dimen/_5sdp"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:layout_width="@dimen/home_icon_size"
                 android:layout_height="@dimen/home_icon_size"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="@dimen/_5sdp"
                 app:srcCompat="@drawable/ic_share"
                 tools:ignore="ContentDescription" />
 
@@ -127,17 +126,16 @@
             android:id="@+id/layoutRate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="@dimen/_5sdp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:paddingVertical="8dp"
-            tools:ignore="UseCompoundDrawables"
-            android:visibility="gone">
+            android:paddingVertical="@dimen/_5sdp"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:layout_width="@dimen/home_icon_size"
                 android:layout_height="@dimen/home_icon_size"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="@dimen/_5sdp"
                 app:srcCompat="@drawable/ic_star_rate"
                 tools:ignore="ContentDescription" />
 
@@ -154,17 +152,17 @@
             android:id="@+id/layoutAbout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="@dimen/_5sdp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:paddingVertical="8dp"
+            android:paddingVertical="@dimen/_5sdp"
             tools:ignore="UseCompoundDrawables"
             android:visibility="gone">
 
             <ImageView
                 android:layout_width="@dimen/home_icon_size"
                 android:layout_height="@dimen/home_icon_size"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="@dimen/_5sdp"
                 app:srcCompat="@drawable/ic_info"
                 tools:ignore="ContentDescription" />
 
@@ -182,9 +180,9 @@
         android:id="@+id/btnPlay"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:paddingVertical="16dp"
+        android:paddingVertical="@dimen/button_padding"
         android:text="@string/play"
-        android:textSize="20sp"
+        android:textSize="@dimen/button_text"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/txt_title"

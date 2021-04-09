@@ -1,41 +1,43 @@
-<resources>
-    <string name="app_name">Follow the colors</string>
-    <string name="record">Record: %d</string>
-    <string name="score">Score: %d</string>
-    <string name="start">Start</string>
-    <string name="settings">Settings</string>
-    <string name="help">Help</string>
-    <string name="how_to_play">How to play?</string>
-    <string name="statistics">Statistics</string>
-    <string name="share_with_friends">Share with friends</string>
-    <string name="rate_and_comment">Rate and comment</string>
-    <string name="play">Play</string>
-    <string name="generating">Generating…</string>
-    <string name="go_ahead">Go Ahead</string>
-    <string name="next">Next</string>
-    <string name="changing">Changing</string>
-    <string name="lose">Game over</string>
-    <string name="new_record">New record</string>
-    <string name="play_again">Play again</string>
-    <string name="return_to_title">Return to title</string>
-    <string name="game_over">Game over</string>
-    <string name="about">About the app</string>
-    <string name="developer">Development</string>
-    <string name="designer">Design</string>
-    <string name="sound">Sound</string>
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Sigue los colores</string>
     <string name="erno" translatable="false">Ernesto Julio Pérez Valdés</string>
-    <string name="version">version %s</string>
     <string name="one" translatable="false">1</string>
     <string name="two" translatable="false">2</string>
     <string name="three" translatable="false">3</string>
     <string name="four" translatable="false">4</string>
     <string name="five" translatable="false">5</string>
     <string name="six" translatable="false">6</string>
-    <string name="tutorial_step_1">Press PLAY button to get into the game</string>
-    <string name="tutorial_step_2">Press START button to start the game</string>
-    <string name="tutorial_step_3">Memorize the generated colors pattern</string>
-    <string name="tutorial_step_4">Touch colors in order that they were shown</string>
-    <string name="tutorial_step_5">Keep playing, try to get high score and enjoy it</string>
-    <string name="tutorial_step_6">If you lose, don\'t give up, keep trying to beat your high score, good luck</string>
-    <string name="level_up">Level Up</string>
+    <string name="record">Récord: %d</string>
+    <string name="score">Puntos: %d</string>
+    <string name="start">Comenzar</string>
+    <string name="settings">Ajustes</string>
+    <string name="help">Ayuda</string>
+    <string name="how_to_play">¿Cómo jugar?</string>
+    <string name="statistics">Estadísticas</string>
+    <string name="share_with_friends">Compartir con amigos</string>
+    <string name="rate_and_comment">Valora y comenta</string>
+    <string name="play">Jugar</string>
+    <string name="generating" tools:ignore="TypographyEllipsis">Generando...</string>
+    <string name="go_ahead">Adelante</string>
+    <string name="next">Siguiente</string>
+    <string name="changing">Cambiando</string>
+    <string name="lose">Has perdido</string>
+    <string name="new_record">Nuevo récord</string>
+    <string name="play_again">Jugar de nuevo</string>
+    <string name="return_to_title">Volver al inicio</string>
+    <string name="game_over">Has perdido</string>
+    <string name="about" tools:ignore="TypographyEllipsis">Acerca de...</string>
+    <string name="developer">Programación</string>
+    <string name="designer">Diseño</string>
+    <string name="sound">Sonido</string>
+    <string name="version">versión %s</string>
+    <string name="tutorial_step_1">Presiona el botón JUGAR para entrar al juego</string>
+    <string name="tutorial_step_2">Presiona el botón COMENZAR para empezar el juego</string>
+    <string name="tutorial_step_3">Memoriza el patrón de colores generado</string>
+    <string name="tutorial_step_4">Toca los colores en el orden que fueron mostrados</string>
+    <string name="tutorial_step_5">Sigue jugando, trata de obtener la mayor puntuación y diviértete</string>
+    <string name="tutorial_step_6">Si pierdes, no te rindas, sigue intentando romper tu mayor puntuación, buena suerte</string>
+    <string name="level_up">Dificultad Aumentada</string>
+    <string name="share_text">Entra, descarga y diviértete un rato con este divertido juego\n\nhttps://www.apklis.cu/application/cu.erno.followthecolors</string>
 </resources>
