@@ -10,7 +10,7 @@
 
     <color name="dark">#222222</color>
     <color name="mediumDark">#333333</color>
-    <color name="background_light">#222</color>
+    <color name="background_light">#222222</color>
     <color name="light">#DEDEDE</color>
 
     <color name="md_green_50">#e8f5e9</color>
@@ -37,8 +37,8 @@
     <color name="purple_on">#AA77EE</color>
     <color name="purple_off">#663399</color>
 
-    <color name="blue_on">#5555FF</color>
-    <color name="blue_off">#333399</color>
+    <color name="blue_on">#5500FF</color>
+    <color name="blue_off">#333366</color>
 
     <color name="orange_on">#FF7700</color>
     <color name="orange_off">#996633</color>

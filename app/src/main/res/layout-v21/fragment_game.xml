@@ -54,7 +54,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintDimensionRatio="1:1"
-        app:srcCompat="@drawable/ic_settings_selector"
+        app:srcCompat="@drawable/ic_settings"
         app:layout_constraintStart_toEndOf="@id/txt_score"
         app:layout_constraintTop_toTopOf="@id/txt_record"
         app:layout_constraintBottom_toBottomOf="@id/txt_record"

@@ -104,7 +104,7 @@ class GameFragment : Fragment() {
                 GameViewModel.GameState.NEXT -> {
                     disableTiles()
                     lifecycleScope.launch {
-                        delay(500)
+                        delay(400)
                         turnOffTiles()
                         binding.btnPlay.isEnabled = true
                         binding.btnPlay.text = getString(R.string.next)
@@ -140,13 +140,20 @@ class GameFragment : Fragment() {
                         requireActivity().theme
                     )
                 )
-            } else {
+            } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 binding.txtRecord.setTextColor(
                     resources.getColorStateList(
                         if (brokeRecord) R.color.color_broke_record else R.color.color_normal_text
                     )
                 )
+            } else {
+                binding.txtRecord.setTextColor(
+                    resources.getColor(
+                        if (brokeRecord) R.color.md_green_500 else R.color.dark
+                    )
+                )
             }
+
         })
 
         viewModel.difficulty.observe(viewLifecycleOwner, Observer { difficulty ->
